@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Subskribr - Subscription services</title>
+		<link href="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\css\homepage.css" rel="stylesheet">
+		<!-- <link href="css/main.css" rel="stylesheet">-->
+	</head>
+	<body ng-app='subscription'>
+		
+		<!---------------------------------------------------------------------header----------------------------------------------------------------------------------->
+		<div id="topDiv"> 
+			<div id="innerTopDiv"> <!--innerTopDiv-->
+				<div class="head" id="logo"> <!--logo-->
+					<h2>Subskribr</h2>
+				</div> <!-- logo -->
+					
+			<form class="head" id="inputField"> <!--inputField-->	
+				<div id="table">
+							<div id="inputSrch">
+								<input id="srvSrch" type="text" placeholder="Search for a service" >
+							</div>
+						
+							<div id="firstButton">
+								<button class="bluishBtn" id="searchBtn" type="submit">Search</button >
+							</div> 
+				</div>
+			</form> <!--End of inputField-->
+				
+				
+			<a class="head" id="browseNav"> <!--browseNav-->
+				
+				<ul>
+					<div>
+				<!--		<li selected="selected">Browse</li>
+					<li value="massage"><a href="#">Massage Therapist</a></li>
+						<li value="catering"><a href="#">Catering</a></li>
+						<li value="magazines"><a href="#">Magazines</a></li>
+						<li value="music lessons"><a href="#">Music Lessons</a></li>
+						<li value="tutor"><a href="#">Tutor</a></li>
+						<li value="cooking"><a href="#">Cooking</a></li>
+						<li value="art"><a href="#">Art</a></li>	-->
+					</div>			
+				</ul>
+			</a> <!--End of browseNav-->
+					
+			<div id="navHeader"> <!--navHeader-->
+				<ul id="nav">
+					<li class="head"><a href="#">Help</a></li>
+					<li class="head"><a href="#">Register</a></li>
+					<li class="head"><a id="signIn" href="#">Sign In</a></li>
+					<li class="head" id="break">|</li>
+					<li class="head"><a href="#">Checkout</a></li>
+				</ul>
+			</div>  <!--End of navHeader-->
+				
+		</div> <!--End of innerTopDiv-->
+	</div> 
+	
+	<!-- ------------------------------------------------------------------------End of header------------------------------------------------------------------------------------------------- -->
+	
+		<!-----------------------------------------------------------------------Top container-------------------------------------------------------------------------------------------------- -->
+		<div id='wrapper'>
+			<div id='backImg' >
+				<a href='#'><img src="C:/Users/Alexander/Documents/Aptana Studio 3 Workspace/Subskribr/dist/img/Home-Subscription.png" height="402"/></a> 
+				<!-- <p><a id="imgText" href="#">We have what you need<br/>BROWSE OUR SELECTION</a></p> -->
+			</div>
+		</div>
+			
+		<div id="positionCC">
+			<div class='sendGift'>
+				<div id="creditCard">
+					<p id="cardName">Subskribr</p>
+					<p id="cardNumber">1234 5678 9012 3456</p> 
+					<p id="expire">01/10</p>
+					<p id="fakeName">John Smith</p>
+				</div>
+				<div id="giftText">
+					<p>Would you like to gift a service to someone special?</p>
+					<button class="bluishBtn" id="sendGift" type="button"><a href="#">Send a gift</a></button>
+				</div>
+			</div>
+		</div>
+		<!-- ----------------------------------------------------------------------end of Top Container------------------------------------------------------------------------------------------- -->
+		
+		<!-- ---------------------------------------------------------------------beginning of trending-------------------------------------------------------------------------------------- -->
+			
+		<div id="trending"> <!-- beginning of trending -->
+			
+			<div id="popHeader">
+				<h2 id="popularService">Popular Services</h2>
+				<h3>Explore our subscribers top finds from our various selections.</h3>
+			</div>
+				
+			<div class="storeTrend">
+				<div class="store" id="trend1">
+					<div>
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\chef.png" width="295" height="238"/>
+					</div>
+					<div class="smallPicRow">
+						<div class="backDrop">
+							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\prep.png" width="83" height="83"/>
+						</div>
+						<div class="backDrop">
+							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\kidsCook.png" width="83" height="83"/>
+						</div>
+						<div class="numberedSubscribers">
+							<p>{{subscribers1}}</p>
+							<p>Subscribers</p>
+						</div>
+					</div>
+					<div>
+						<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking/cooking.png" width="55" height="55"/>
+					</div>
+							
+		  	   </div>
+		   			   
+			   <div class="store" id="trend2">
+			   		<div>
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\handsOn.png" width="297" height="239"/>
+					</div>
+					<div class="smallPicRow">
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\hotRocks.png" width="82" height="82"/>
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\coupleMassage.png" width="82" height="82"/>
+						<div class="numberedSubscribers">
+							<p>{{subscribers2}}</p>
+							<p>Subscribers</p>
+						</div>
+					</div>
+					<div>
+						<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\massage-therapy.png" width="55" height="55"/>
+					</div>
+							
+			   </div>
+				
+		  	   <div class="store" id="trend3">
+					<div>
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\sheetMusic.png" width="297" height="239"/>
+					</div>
+					<div class="smallPicRow">
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\guitar.png" width="82" height="82"/>
+						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\horn.png" width="82" height="82"/>
+						<div class="numberedSubscribers">
+							<p>{{subscribers3}}</p>
+							<p>Subscribers</p>
+						</div>
+					</div>
+					<div>
+						<img class="round"  src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\piano.png" width="55" height="55"/>
+					</div>
+			   </div> <!-- end of storeTrend class -->			
+		   </div>
+	   </div>
+				
+				<div class="shopTrend">
+					<p id="shopTrendText"><a id="shopTrend" href="#">Shop Our Trending Subsriptions ></a></p>
+				</div>
+		</div> 
+		<!-- ------------------------------------------------------------------------end of trending------------------------------------------------------------------------------------------ -->
+			
+		<div id="suggestions"> <!-- begin Suggestions-->
+			<div id="ask">
+				<p id="suggesFirst">May we make a suggestion?</p>
+				<p id="suggestSecond">Get inspiration from these Subskribr members top picks.</p>
+				<!--Member selection-->
+				<div class="memberFav"></div>
+				<div class="memberFav"></div>
+				<div class="memberFav"></div>
+				<div class="memberFav"></div>
+			</div>
+				
+			<a href="#">
+				<div id="fav">
+					<p>What subscriptions do your favorite bloggers and subscribers love?</p>
+					<button class="bluishBtn" id="suggestBtn" type="submit">Browse Their Favorites</button>
+				</div>	
+			</a>
+				
+			<div id="bigPic"> 
+				<div> 
+					<img id="firstBigPic" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\big\large_pottery_2.png" width="1899" height="471"/> <!--Big pic-->
+					<img id="secondBigPic" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\big\CU.png" width="83" height="83"/> <!--Little pic-->
+				</div>
+				
+				<div id="personlQuote">
+					<p>{{quote}}</p>
+					<p>{{name}} of {{business name}}</p>
+				</div>
+			</div>		
+		</div> <!-- end of suggestion -->
+		
+		<div id="bottomContainer"> <!--Bottom container-->
+		
+		<!-- WHAT WE OFFER(empty for now, needs graphics)
+		
+		<div>
+			<div><p>Satisfied Customers</p></div>
+			<div><p>Passionate Sellers</p></div>
+			<div><p>Secure Transactions</p></div>
+		</div>		
+		
+		WHAT WE OFFER(end of space)-->
+					
+			<div id="updateMe">
+				<div>
+					<p>Get top trends and fresh editors' picks in your inbox with Subskribr Finds.</p>
+					<input type="text" value="Enter your email">
+					<button class="bluishBtn" id="emailBox">Keep Me Updated</button>
+				</div>
+			</div>
+			
+			<hr />
+			
+			
+			<div id="pageBottom"> <!-- begin pageBottom -->
+				<ul id="pageBottom1">
+					<p>Turn Your Passion Into a Business</p>
+					<button class="bluishBtn"type="button">Provide a Service</button>
+					<ul>
+						<p>Sell on Subskribr</p>
+						<li><a href="#">Seller Handbook</a></li>
+						<li><a href="#">Subskribr Credit Card Reader</a></li>
+					</ul>
+					</ul>
+					<ul id="pageBottom2">
+						<p>Join the Community</p>
+						<li><a href="#">Teams</a></li>
+						<li><a href="#">Forums</a></li>
+						<li><a href="#">Upcoming Events</a></li>
+						<li><a href="#">Affiliates</a></li>
+					</ul>
+					<ul id="pageBottom3">
+						<p>Discover and Shop</p>
+						<li><a href="#">Gift Cards</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Tastemakes</a></li>
+						<li><a href="#">Mobile Apps</a></li>
+						<li><a href="#">Gift Registries</a></li>
+						<li><a href="#">Wholesale</a></li>	
+					</ul>
+					<ul id="pageBottom4">
+						<p>Get to Know Us</p>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Developers</a></li>
+					</ul>
+					<ul id="pageBottom5">
+						<p>Follow Subskribr</p>
+						<li><a href="#"><img />Facebook</a></li>
+						<li><a href="#"><img />Twitter</a></li>	
+						<li><a href="#"><img />Pinterest</a></li>	
+							<li><a href="#"><img />Instagram</a></li>		
+					</ul>
+				</div> <!-- end of pageBottom -->
+			</div> <!-- end of Bottom Container -->
+		</div>
+		<script type="text/javascript" src="angular/angular.js"></script>
+    	<script type="text/javascript" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\js\main.js"></script>
+	</body>
+</html>
