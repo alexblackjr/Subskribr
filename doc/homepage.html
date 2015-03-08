@@ -18,7 +18,7 @@
 			<form class="head" id="inputField"> <!--inputField-->	
 				<div id="table">
 							<div id="inputSrch">
-								<input id="srvSrch" type="text" placeholder="Search for a service" >
+								<input class="srvSrch" type="text" placeholder="Search for a service" >
 							</div>
 						
 							<div id="firstButton">
@@ -94,59 +94,71 @@
 				
 			<div class="storeTrend">
 				<div class="store" id="trend1">
-					<div>
+					<div class="storeLargePic">
 						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\chef.png" width="295" height="238"/>
 					</div>
-					<div class="smallPicRow">
-						<div class="backDrop">
-							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\prep.png" width="83" height="83"/>
+						<div class="smallPicRow">
+							<div class="backDrop">
+								<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\prep.png" width="83" height="83"/>
+							</div>
+							<div class="backDrop">
+								<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\kidsCook.png" width="83" height="83"/>
+							</div>
+							<div class="numberedSubscribers">
+								<p>{{subscribers1}}</p>
+								<p>Subscribers</p>
+							</div>
 						</div>
-						<div class="backDrop">
-							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking\kidsCook.png" width="83" height="83"/>
+					<div class="bottomStore">
+						<div>
+							<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking/cooking.png" width="55" height="55"/>
 						</div>
-						<div class="numberedSubscribers">
-							<p>{{subscribers1}}</p>
-							<p>Subscribers</p>
-						</div>
-					</div>
-					<div>
-						<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\cooking/cooking.png" width="55" height="55"/>
-					</div>
-							
+					</div>		
 		  	   </div>
 		   			   
 			   <div class="store" id="trend2">
-			   		<div>
+			   		<div class="storeLargePic">
 						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\handsOn.png" width="297" height="239"/>
 					</div>
-					<div class="smallPicRow">
-						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\hotRocks.png" width="82" height="82"/>
-						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\coupleMassage.png" width="82" height="82"/>
-						<div class="numberedSubscribers">
-							<p>{{subscribers2}}</p>
-							<p>Subscribers</p>
+						<div class="smallPicRow">
+							<div class="backDrop">
+								<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\hotRocks.png" width="82" height="82"/>
+							</div>
+							<div class="backDrop">
+								<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\coupleMassage.png" width="82" height="82"/>
+							</div>
+							<div class="numberedSubscribers">
+								<p>{{subscribers2}}</p>
+								<p>Subscribers</p>
+							</div>
 						</div>
-					</div>
-					<div>
-						<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\massage-therapy.png" width="55" height="55"/>
-					</div>
-							
+					<div class="bottomStore">
+						<div>
+							<img class="round" src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\massageTherapy\massage-therapy.png" width="55" height="55"/>
+						</div>
+					</div>							
 			   </div>
 				
 		  	   <div class="store" id="trend3">
-					<div>
+					<div class="storeLargePic">
 						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\sheetMusic.png" width="297" height="239"/>
 					</div>
 					<div class="smallPicRow">
-						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\guitar.png" width="82" height="82"/>
-						<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\horn.png" width="82" height="82"/>
+						<div class="backDrop">
+							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\guitar.png" width="82" height="82"/>
+						</div>
+						<div class="backDrop">
+							<img src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\horn.png" width="82" height="82"/>
+						</div>
 						<div class="numberedSubscribers">
-							<p>{{subscribers3}}</p>
-							<p>Subscribers</p>
+								<p>{{subscribers3}}</p>
+								<p>Subscribers</p>
 						</div>
 					</div>
-					<div>
-						<img class="round"  src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\piano.png" width="55" height="55"/>
+					<div class="bottomStore">
+						<div>
+							<img class="round"  src="C:\Users\Alexander\Documents\Aptana Studio 3 Workspace\Subskribr\dist\img\music\piano.png" width="55" height="55"/>
+						</div>
 					</div>
 			   </div> <!-- end of storeTrend class -->			
 		   </div>
@@ -202,10 +214,11 @@
 		WHAT WE OFFER(end of space)-->
 					
 			<div id="updateMe">
-				<div>
-					<p>Get top trends and fresh editors' picks in your inbox with Subskribr Finds.</p>
-					<input type="text" value="Enter your email">
-					<button class="bluishBtn" id="emailBox">Keep Me Updated</button>
+				<div id="updateBox">
+					<p id="p1">Get top trends and fresh editors' picks</p> 
+					<p id="p2">in your inbox with Subskribr Finds.</p>
+					<input class="srvSrch" id="updateSearch" type="text" value="Enter your email">
+					<button class="bluishBtn" id="emailBtn">Keep Me Updated</button>
 				</div>
 			</div>
 			

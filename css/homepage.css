@@ -63,7 +63,7 @@ body{
 	
 }
 
-#srvSrch{
+.srvSrch{
 	position: absolute;
 	width: 261px;
 	top: 50%;
@@ -343,6 +343,10 @@ font-family: 'guardian-egyptt',georgia,serif;
 	border: 1px solid #D2D2D1;
 }
 
+.backDrop>img{
+	margin-top: 3px;
+}
+
 .numberedSubscribers {
 	float: right;
 	border: 1px solid #D2D2D1;
@@ -350,10 +354,14 @@ font-family: 'guardian-egyptt',georgia,serif;
 	height: 90px;
 	font-size: 10px;
 	margin-top: 15px;	
+	margin-right: 8px;
 }
 
 .round {
 	border-radius: 100%;
+	position: relative;
+	top: -88px;
+	left: -117px;
 }
 
 .store{
@@ -362,6 +370,28 @@ font-family: 'guardian-egyptt',georgia,serif;
 	background: white;
 	float: left;
 	margin: 20px;
+
+}
+
+.storeLargePic{
+	margin-top: 5px;
+}
+
+.smallPicRow{
+	margin-top: 30px;
+}
+
+.smallPicRow>img{
+	position: relative;
+	top: 35px;	
+}
+
+.bottomStore{
+	border-top:1px solid #BCB7B3;
+	background-color: #FBFBF8;
+	height: 95px;
+	position: relative;
+	top: 117px;
 }
 
 #shopTrendText{
@@ -486,6 +516,49 @@ a{
 
 #break{
 	font-size: 20px;
+}
+
+#updateBox{
+	width: 982px;
+	height: 171px;
+	background: #DBDBD6;
+	position: relative;
+	left: 475px;
+	top: -104px;
+}
+
+#updateBox> p{
+	text-align: center;
+	font-size: 22px;
+	font-family: 'guardian-egyptt',georgia,serif;
+	font-weight: 600;
+	color: black;
+		
+}
+
+#p1{
+	position: relative;
+	top:30px;
+}
+
+#p2{
+	position: relative;
+	top: 15px;
+	left: 5px;
+}
+
+#updateSearch{
+	position: relative;
+	top: 9px;
+	left: 275px;
+	height: 38px;
+	
+}
+
+#emailBtn{
+	position: relative;
+	left: 280px;
+	top: 10px
 }
 
 #bottomContainer{
