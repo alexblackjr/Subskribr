@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 		<title>Subskribr - Subscription services</title>
 		<link href="css/homepage.css" rel="stylesheet">
-		<!-- <link href="css/main.css" rel="stylesheet">-->
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
 	</head>
 	<body ng-app='subscription'>
 		
@@ -47,7 +47,20 @@
 			<div id="navHeader"> <!--navHeader-->
 				<ul id="nav">
 					<li class="head"><a href="#">Help</a></li>
-					<li class="head"><a href="#">Register</a></li>
+					<li class="head"><a href="#" onclick="document.getElementById('lightbox').style.display='inline'">Register</a></li>
+					
+						<div id="lightbox" class="lightbox" style="display:none" onclick="document.getElementById('lightbox').style.display='none';">
+				   			<table class="lightbox_table">
+					 			<tr> 
+					   				<td class="lightbox_table_cell" align="center"> 
+					      				<div id="lightbox_content">
+         					  
+				          				</div>
+				    				</td>
+				  				</tr>
+			   				</table>
+						</div>
+					
 					<li class="head"><a id="signIn" href="#">Sign In</a></li>
 					<li class="head" id="break">|</li>
 					<li class="head"><a href="#">Checkout</a></li>
@@ -92,7 +105,7 @@
 				<h3>Explore our subscribers top finds from our various selections.</h3>
 			</div>
 				
-			<div class="storeTrend">
+			<div class="storeTrend" ng-controller="MainController">
 				<div class="store" id="trend1">
 					<div class="storeLargePic">
 						<img src="img/cooking/chef.png" width="295" height="238"/>
@@ -105,7 +118,7 @@
 								<img src="img/cooking/kidsCook.png" width="83" height="83"/>
 							</div>
 							<div class="numberedSubscribers">
-								<p>{{subscribers1}}</p>
+								<p>{{store.subscribers}}</p>
 								<p>Subscribers</p>
 							</div>
 						</div>
@@ -128,7 +141,7 @@
 								<img src="img/massageTherapy/coupleMassage.png" width="82" height="82"/>
 							</div>
 							<div class="numberedSubscribers">
-								<p>{{subscribers2}}</p>
+								<p>{{store.subscribers}}</p>
 								<p>Subscribers</p>
 							</div>
 						</div>
@@ -151,7 +164,7 @@
 							<img src="img/music/horn.png" width="82" height="82"/>
 						</div>
 						<div class="numberedSubscribers">
-								<p>{{subscribers3}}</p>
+								<p>{{store.subscribers}}</p>
 								<p>Subscribers</p>
 						</div>
 					</div>
@@ -268,7 +281,8 @@
 				</div> <!-- end of pageBottom -->
 			</div> <!-- end of Bottom Container -->
 		</div>
-		<script type="text/javascript" src="angular/angular.js"></script>
+		<script type="text/javascript" src="C:/angular-1.2.27/angular-1.2.27/angular.js"></script>
+    	<
     	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
